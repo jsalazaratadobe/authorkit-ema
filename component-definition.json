@@ -41,8 +41,8 @@
           "rows": 2,
           "columns": 1,
           "fields": [
-            { "name": "image", "selector": "div:nth-child(1)>div>picture>img[src]" },
-            { "name": "imageAlt", "selector": "div:nth-child(1)>div>picture>img[alt]" },
+            { "name": "image", "selector": "div:nth-child(1) img[src]" },
+            { "name": "imageAlt", "selector": "div:nth-child(1) img[alt]" },
             { "name": "content", "selector": "div:nth-child(2)>div" }
           ]
         }
@@ -58,8 +58,8 @@
           "rows": 1,
           "columns": 1,
           "fields": [
-            { "name": "image", "selector": "div>div>picture>img[src]" },
-            { "name": "imageAlt", "selector": "div>div>picture>img[alt]" },
+            { "name": "image", "selector": "div>div img[src]" },
+            { "name": "imageAlt", "selector": "div>div img[alt]" },
             { "name": "content", "selector": "div>div" }
           ]
         }
