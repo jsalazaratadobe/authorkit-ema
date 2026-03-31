@@ -59,12 +59,10 @@
           "model": "hero",
           "plugins": {
             "da": {
-              "name": "hero",
-              "rows": 2,
-              "columns": 1,
+              "unsafeHTML": "<div class=\"hero\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div></div><div><div><h1></h1></div></div></div>",
               "fields": [
-                { "name": "image", "selector": "div:nth-child(1)>div>picture>img[src]" },
-                { "name": "imageAlt", "selector": "div:nth-child(1)>div>picture>img[alt]" },
+                { "name": "image", "selector": "div:nth-child(1) img[src]" },
+                { "name": "imageAlt", "selector": "div:nth-child(1) img[alt]" },
                 { "name": "content", "selector": "div:nth-child(2)>div" }
               ]
             }
