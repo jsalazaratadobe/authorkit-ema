@@ -73,6 +73,18 @@
       },
       {
         "component": "select",
+        "name": "classes_background",
+        "label": "Background Color",
+        "options": [
+          { "name": "None", "value": "" },
+          { "name": "Dark", "value": "bg-dark" },
+          { "name": "Light", "value": "bg-light" },
+          { "name": "Brand", "value": "bg-brand" },
+          { "name": "Accent", "value": "bg-accent" }
+        ]
+      },
+      {
+        "component": "select",
         "name": "classes_size",
         "label": "Size",
         "options": [
