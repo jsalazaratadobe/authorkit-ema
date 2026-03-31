@@ -72,15 +72,31 @@
         "label": "Content"
       },
       {
-        "component": "multiselect",
-        "name": "classes",
-        "label": "Style",
+        "component": "select",
+        "name": "classes_size",
+        "label": "Size",
         "options": [
+          { "name": "Default", "value": "" },
           { "name": "Small", "value": "small" },
           { "name": "Large", "value": "large" },
-          { "name": "Full", "value": "full" },
+          { "name": "Full", "value": "full" }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_theme",
+        "label": "Theme",
+        "options": [
+          { "name": "Default", "value": "" },
           { "name": "Light", "value": "light" },
-          { "name": "Dark", "value": "dark" },
+          { "name": "Dark", "value": "dark" }
+        ]
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Layout Options",
+        "options": [
           { "name": "Center", "value": "center" },
           { "name": "Stack", "value": "stack" },
           { "name": "Quiet Background", "value": "quiet-background" }
