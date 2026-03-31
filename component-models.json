@@ -1,7 +1,53 @@
 [
   {
+    "id": "page-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "text",
+        "name": "description",
+        "label": "Description"
+      },
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image"
+      }
+    ]
+  },
+  {
+    "id": "image",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Alt Text"
+      }
+    ]
+  },
+  {
     "id": "section",
-    "fields": []
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          { "name": "Dark", "value": "dark" },
+          { "name": "Light", "value": "light" }
+        ]
+      }
+    ]
   },
   {
     "id": "hero",
@@ -80,6 +126,17 @@
     "id": "columns",
     "fields": [
       {
+        "component": "number",
+        "valueType": "number",
+        "name": "columns",
+        "label": "Number of Columns",
+        "value": 2,
+        "validation": {
+          "numberMin": 1,
+          "numberMax": 6
+        }
+      },
+      {
         "component": "multiselect",
         "name": "classes",
         "label": "Style",
@@ -94,23 +151,6 @@
           { "name": "Gap XL", "value": "gap-xl" },
           { "name": "Gap XXL", "value": "gap-xxl" }
         ]
-      }
-    ]
-  },
-  {
-    "id": "columns-item",
-    "fields": [
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "left",
-        "label": "Left Column"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "right",
-        "label": "Right Column"
       }
     ]
   },
