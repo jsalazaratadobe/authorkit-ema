@@ -1,0 +1,196 @@
+[
+  {
+    "id": "section",
+    "fields": []
+  },
+  {
+    "id": "hero",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Background Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt Text"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "content",
+        "label": "Content"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          { "name": "Small", "value": "small" },
+          { "name": "Large", "value": "large" },
+          { "name": "Full", "value": "full" },
+          { "name": "Light", "value": "light" },
+          { "name": "Dark", "value": "dark" },
+          { "name": "Center", "value": "center" },
+          { "name": "Stack", "value": "stack" },
+          { "name": "Quiet Background", "value": "quiet-background" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt Text"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "content",
+        "label": "Content"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          { "name": "Quiet", "value": "quiet" },
+          { "name": "Center", "value": "center" },
+          { "name": "Hash Aware", "value": "hash-aware" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "columns",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          { "name": "Z Pattern", "value": "z-pattern" },
+          { "name": "Image Cover", "value": "image-cover" },
+          { "name": "Align Top", "value": "align-top" },
+          { "name": "Gap XS", "value": "gap-xs" },
+          { "name": "Gap Small", "value": "gap-sm" },
+          { "name": "Gap Medium", "value": "gap-md" },
+          { "name": "Gap Large", "value": "gap-lg" },
+          { "name": "Gap XL", "value": "gap-xl" },
+          { "name": "Gap XXL", "value": "gap-xxl" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "columns-item",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "left",
+        "label": "Left Column"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "right",
+        "label": "Right Column"
+      }
+    ]
+  },
+  {
+    "id": "youtube",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "url",
+        "label": "YouTube URL"
+      }
+    ]
+  },
+  {
+    "id": "advanced-tabs",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "tabs",
+        "label": "Tab Labels (as list)"
+      }
+    ]
+  },
+  {
+    "id": "section-metadata",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          { "name": "Dark", "value": "dark" },
+          { "name": "Light", "value": "light" },
+          { "name": "Wide", "value": "wide" }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "grid",
+        "label": "Grid Columns",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "gap",
+        "label": "Gap",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "spacing",
+        "label": "Spacing",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "container",
+        "label": "Container",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "layout",
+        "label": "Layout",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "background",
+        "label": "Background Image",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "background-color",
+        "label": "Background Color",
+        "valueType": "string"
+      }
+    ]
+  }
+]
