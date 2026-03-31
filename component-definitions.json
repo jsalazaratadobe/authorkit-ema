@@ -1,0 +1,139 @@
+{
+  "groups": [
+    {
+      "title": "Content",
+      "id": "content",
+      "components": [
+        "hero",
+        "card",
+        "columns",
+        "youtube",
+        "advanced-tabs"
+      ]
+    },
+    {
+      "title": "Configuration",
+      "id": "configuration",
+      "components": [
+        "section-metadata"
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "title": "Section",
+      "id": "section",
+      "model": "section",
+      "filter": "section",
+      "plugins": {
+        "da": {
+          "name": "section"
+        }
+      }
+    },
+    {
+      "title": "Hero",
+      "id": "hero",
+      "model": "hero",
+      "plugins": {
+        "da": {
+          "name": "hero",
+          "rows": 2,
+          "columns": 1,
+          "fields": [
+            { "name": "image", "selector": "div:nth-child(1)>div>picture>img[src]" },
+            { "name": "imageAlt", "selector": "div:nth-child(1)>div>picture>img[alt]" },
+            { "name": "content", "selector": "div:nth-child(2)>div" }
+          ]
+        }
+      }
+    },
+    {
+      "title": "Card",
+      "id": "card",
+      "model": "card",
+      "plugins": {
+        "da": {
+          "name": "card",
+          "rows": 1,
+          "columns": 1,
+          "fields": [
+            { "name": "image", "selector": "div>div>picture>img[src]" },
+            { "name": "imageAlt", "selector": "div>div>picture>img[alt]" },
+            { "name": "content", "selector": "div>div" }
+          ]
+        }
+      }
+    },
+    {
+      "title": "Columns",
+      "id": "columns",
+      "model": "columns",
+      "filter": "columns",
+      "plugins": {
+        "da": {
+          "name": "columns",
+          "rows": 1,
+          "columns": 2
+        }
+      }
+    },
+    {
+      "title": "Columns Item",
+      "id": "columns-item",
+      "model": "columns-item",
+      "plugins": {
+        "da": {
+          "name": "columns-item",
+          "rows": 0,
+          "columns": 2,
+          "fields": [
+            { "name": "left", "selector": "div:nth-child(1)" },
+            { "name": "right", "selector": "div:nth-child(2)" }
+          ]
+        }
+      }
+    },
+    {
+      "title": "YouTube",
+      "id": "youtube",
+      "model": "youtube",
+      "plugins": {
+        "da": {
+          "name": "youtube",
+          "rows": 1,
+          "columns": 1,
+          "fields": [
+            { "name": "url", "selector": "div>div>a[href]" }
+          ]
+        }
+      }
+    },
+    {
+      "title": "Advanced Tabs",
+      "id": "advanced-tabs",
+      "model": "advanced-tabs",
+      "plugins": {
+        "da": {
+          "name": "advanced-tabs",
+          "rows": 1,
+          "columns": 1,
+          "fields": [
+            { "name": "tabs", "selector": "div>div>ul" }
+          ]
+        }
+      }
+    },
+    {
+      "title": "Section Metadata",
+      "id": "section-metadata",
+      "model": "section-metadata",
+      "plugins": {
+        "da": {
+          "name": "section-metadata",
+          "type": "key-value-block"
+        }
+      }
+    }
+  ]
+}
